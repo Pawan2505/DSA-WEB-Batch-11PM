@@ -2492,57 +2492,337 @@
 
 // Take something and return something
 
+// #include<iostream>
+// using namespace std;
+// <<<<<<< HEAD
+// int main(){
+
+//    char choice = 'y';
+
+   
+//    while(choice == 'y' || choice == 'Y' ){
+   
+//    int start;
+//    cout<<"Enter Start Number :";
+//    cin>>start;
+//    int end;
+//    cout<<"Enter end number : ";
+//    cin>>end;
+
+
+//     for(int num = start; num<=end; num++){
+
+//         int count = 0;
+
+//         for(int i = 1; i <= num; i++){
+
+//             if(num%i == 0){
+//                 count++;
+//             }
+//         }
+
+//         if(count == 2){
+//             cout<<num<<" ";
+//         }
+//     }
+
+//     cout<<"\nAre you want to try next (y/n) : ";
+//     cin>>choice;
+    
+//    }
+// =======
+
+// float addition(double num1, double num2){ 
+
+//     return num1+num2;   // float
+  
+// }
+
+// int main(){
+
+//  double result =  addition(12.4,9.3); 
+
+//  cout<<"Result : "<<result<<endl;    
+
+// >>>>>>> f6cfb53 (function)
+// }
+
+
+
+
+// #include<iostream>
+// #include<string>
+// using namespace std;
+
+
+// int main(){
+//     int num1;
+//     cout<<"Enter Num1 : ";
+//     cin>>num1;
+//     int num2;
+//     cout<<"Enter Num2 : ";
+//     cin>>num2;
+
+//     char exp;
+//     cout<<"Enter Operator : ";
+//     cin>>exp;
+
+//     switch(exp){
+
+//         case '+' : 
+//             cout<<"Addition : "<<num1+num2<<endl;
+//             break;
+//         case '-' : 
+//             cout<<"Subtraction : "<<num1-num2<<endl;
+//             break;
+//         case '*' : 
+//             cout<<"Multiplication : "<<num1*num2<<endl;
+//             break;
+//         case '/' : 
+//             cout<<"Divide : "<<num1/num2<<endl;
+//             break;
+//         case '%' : 
+//             cout<<"Remainder : "<<num1%num2<<endl;
+//             break;
+
+//         default : 
+//         cout<<"Please enter correct operator!"<<endl;
+
+//     }
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//    char choice = 'y';
+
+   
+//    while(choice == 'y' || choice == 'Y' ){
+   
+//     int num;
+//     cout<<"Enter Number : ";
+//     cin>>num;
+
+//     int count = 0;
+//       cout<<"Factor : ";
+//     for(int i = 1; i <= num; i++){
+//         if(num%i == 0){
+//             cout<<i<<" ";
+//             count++;
+//         }
+//     }
+
+//   cout<<"\nCount : "<<count<<endl;
+//     if(count == 2){
+//         cout<<"\nPrime Number!";
+//     }else{
+//         cout<<"\nNot prime number!";
+//     }
+
+//     cout<<"\nAre you want to try next (y/n) : ";
+//     cin>>choice;
+    
+//    }
+// }
+
+// Prime number within a given range
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//    char choice = 'y';
+
+   
+//    while(choice == 'y' || choice == 'Y' ){
+   
+//    int start;
+//    cout<<"Enter Start Number :";
+//    cin>>start;
+//    int end;
+//    cout<<"Enter end number : ";
+//    cin>>end;
+
+
+//     for(int num = start; num<=end; num++){
+
+//         int count = 0;
+
+//         for(int i = 1; i <= num; i++){
+
+//             if(num%i == 0){
+//                 count++;
+//             }
+//         }
+
+//         if(count == 2){
+//             cout<<num<<" ";
+//         }
+//     }
+
+//     cout<<"\nAre you want to try next (y/n) : ";
+//     cin>>choice;
+    
+//    }
+// }
+
+
+
+
+//  Pattern
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//     // outer loop -> row
+//     for(int row = 1; row <= 4; row++){
+
+//         // inner loop -> cols
+
+//         for(int col = 1; col<=4; col++){
+
+//             cout<<"*";
+//         }
+
+//         cout<<endl;
+
+//     }
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//     // outer loop -> row
+//     for(int row = 1; row <= 4; row++){
+
+//         // inner loop -> cols
+
+//         for(int col = 1; col<=4; col++){
+
+//             if((row == 2 || row == 3) && (col == 2 || col == 3)){
+//                 cout<<" ";
+//             }else{
+//                 cout<<"*";
+//             }
+//         }
+
+//         cout<<endl;
+
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//     // outer loop -> row
+//     for(int row = 1; row <= 4; row++){
+
+
+//         // space 
+
+//         for(int space = 1; space < row; space++){
+//             cout<<" ";
+//         }
+
+//         // star
+
+//         for(int star = 1; star<=4; star++){
+
+//         cout<<"*";
+         
+//         }
+
+//         cout<<endl;
+
+//     }
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//     int num;
+//     cout<<"Enter Number : ";
+//     cin>>num;
+
+//     int sum = 0;
+
+//     while(num>0){
+
+//         int digit = num%10;  // last digit  186%10 => 6  , 18%10  => 8, 1%10=> 1
+
+//         sum += digit;  // 0 +6 +8 +1
+
+//         num = num/10;  // last digit remove  186/10 => 18, 18/10 => 1, 1/10 => 0
+
+//     }
+
+//     cout<<"Sum : "<<sum<<endl;
+
+// }
+
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int num;
+//     cout<<"Enter Number : ";
+//     cin>>num;
+
+//     int rev = 0;
+
+//     while(num>0){
+//         int digit = num%10;
+
+//         rev = rev*10 + digit;
+
+//         num = num/10;
+//     }
+
+//     cout<<"Reverse : "<<rev<<endl;
+// }
+
+
+
 #include<iostream>
 using namespace std;
-<<<<<<< HEAD
+
 int main(){
+    int num;
+    cout<<"Enter Number : ";
+    cin>>num;
 
-   char choice = 'y';
+    int temp = num;
 
-   
-   while(choice == 'y' || choice == 'Y' ){
-   
-   int start;
-   cout<<"Enter Start Number :";
-   cin>>start;
-   int end;
-   cout<<"Enter end number : ";
-   cin>>end;
+    int rev = 0;
 
+    while(num>0){
+        int digit = num%10;
 
-    for(int num = start; num<=end; num++){
+        rev = rev*10 + digit;
 
-        int count = 0;
-
-        for(int i = 1; i <= num; i++){
-
-            if(num%i == 0){
-                count++;
-            }
-        }
-
-        if(count == 2){
-            cout<<num<<" ";
-        }
+        num = num/10;
     }
 
-    cout<<"\nAre you want to try next (y/n) : ";
-    cin>>choice;
-    
+   if(temp == rev){
+    cout<<"Palindrome Number!"<<endl;
+   }else{
+    cout<<"Not Palindrome Number!"<<endl;
    }
-=======
-
-float addition(double num1, double num2){ 
-
-    return num1+num2;   // float
-  
-}
-
-int main(){
-
- double result =  addition(12.4,9.3); 
-
- cout<<"Result : "<<result<<endl;    
-
->>>>>>> f6cfb53 (function)
 }
