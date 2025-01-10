@@ -2800,29 +2800,153 @@
 
 
 
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int num;
+//     cout<<"Enter Number : ";
+//     cin>>num;
+
+//     int temp = num;
+
+//     int rev = 0;
+
+//     while(num>0){
+//         int digit = num%10;
+
+//         rev = rev*10 + digit;
+
+//         num = num/10;
+//     }
+
+//    if(temp == rev){
+//     cout<<"Palindrome Number!"<<endl;
+//    }else{
+//     cout<<"Not Palindrome Number!"<<endl;
+//    }
+// }
+
+
+// #include<iostream>
+
+// using namespace std;
+
+// int main(){
+
+//          // row
+//     for(int row = 1; row <= 4; row++){
+
+//         // space
+
+//         for(int space = 1; space <= 4-row; space++){
+//             cout<<" ";
+//         }
+
+//         // star
+
+//         for(int star = 1; star <= 4; star++){
+//             cout<<"*";
+//         }
+
+//         cout<<endl;
+
+//     }
+// }
+
+
+
+// #include<iostream>
+
+// using namespace std;
+
+// int main(){
+
+//          // row
+//      for(int row = 1; row <= 4; row++){
+
+//         // star
+
+//         for(int star = 1; star <= row; star++){
+//             cout<<"*";
+//         }
+
+//         cout<<endl;
+
+//     }
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//     //row
+
+//     for (int i =1; i<=4;i++){
+
+//         // space
+//         for(int j=1; j<=4-i; j++){
+//             cout<<" ";
+//         }
+
+//         //star
+
+//         for(int j=1; j<=2*i-1; j++){
+//                 cout<<"*";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+
 #include<iostream>
+#include<math.h>
 using namespace std;
 
+int countValue(int num){
+
+    int count = 0;
+
+    while(num>0){
+
+        num = num/10;
+
+        count++;
+
+    }
+
+    return count;
+
+
+}
+
 int main(){
+
     int num;
     cout<<"Enter Number : ";
     cin>>num;
 
-    int temp = num;
+   int power =  countValue(num);
 
-    int rev = 0;
+   cout<<"Power : "<<power<<endl;
 
-    while(num>0){
-        int digit = num%10;
+    int original = num;
 
-        rev = rev*10 + digit;
+   int sum = 0;
 
-        num = num/10;
+   while(num>0){
+    int digit = num%10;
+
+    sum += pow(digit,power);
+
+    num = num/10;
+   }
+
+    if(original == sum){
+        cout<<"Armstrong Number!"<<endl;
+    }else{
+        cout<<"Sorry, Not Armstrong Number!"<<endl;
     }
 
-   if(temp == rev){
-    cout<<"Palindrome Number!"<<endl;
-   }else{
-    cout<<"Not Palindrome Number!"<<endl;
-   }
 }
