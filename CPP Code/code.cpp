@@ -2900,53 +2900,213 @@
 // }
 
 
+// #include<iostream>
+// #include<math.h>
+// using namespace std;
+
+// int countValue(int num){
+
+//     int count = 0;
+
+//     while(num>0){
+
+//         num = num/10;
+
+//         count++;
+
+//     }
+
+//     return count;
+
+
+// }
+
+// int main(){
+
+//     int num;
+//     cout<<"Enter Number : ";
+//     cin>>num;
+
+//    int power =  countValue(num);
+
+//    cout<<"Power : "<<power<<endl;
+
+//     int original = num;
+
+//    int sum = 0;
+
+//    while(num>0){
+//     int digit = num%10;
+
+//     sum += pow(digit,power);
+
+//     num = num/10;
+//    }
+
+//     if(original == sum){
+//         cout<<"Armstrong Number!"<<endl;
+//     }else{
+//         cout<<"Sorry, Not Armstrong Number!"<<endl;
+//     }
+
+// }
+
+
+// Fibonacci Series upto nth term
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//     int n1 = 0;
+//     cout<<n1<<" ";
+//     int n2 = 1;
+//     cout<<n2<<" ";
+
+//     for(int i = 2; i < 10; i++){
+//       int  n3 = n1 + n2;
+//       cout<<n3<<" ";
+//       n1 = n2;
+//       n2 = n3;
+//     }
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//   for(int row = 1; row<=4; row++){
+//     for(int col = 1; col <= 4; col++){
+//       cout<<"1";
+//     }
+//       cout<<endl;
+//   }
+
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//   int num = 1;
+
+//   for(int row = 1; row<=4; row++){
+//     for(int col = 1; col <= 4; col++){
+//       cout<<num;
+//     }
+//       cout<<endl;
+//   }
+
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+ 
+//   for(int row = 1; row<=4; row++){
+//     for(int col = 1; col <= 4; col++){
+//       cout<<row;
+//     }
+//       cout<<endl;
+//   }
+
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+ 
+//   for(int row = 1; row<=4; row++){
+//     for(int col = 1; col <= 3; col++){
+      
+//       if(row == 2 && col == 2){
+//         cout<<"1";
+//       }
+//       else if(row == 3 && col == 2){
+//         cout<<"2";
+//       }
+//       else{
+//         cout<<"3";
+//       }
+//     }
+//       cout<<endl;
+//   }
+
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+ 
+//   for(int row = 1; row<=4; row++){
+//     for(int col = 1; col <= 3; col++){
+      
+//       if(row == 2 && col == 2){
+//         cout<<"1";
+//       }
+//       else if(row == 3 && col == 2){
+//         cout<<"2";
+//       }
+//       else{
+//         cout<<"3";
+//       }
+//     }
+//       cout<<endl;
+//   }
+
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+ 
+//   for(int row = 1; row<=4; row++){
+//     for(int col = 1; col <= 3; col++){
+      
+//       if(row == 2 && col == 2){
+//         cout<<"1";
+//       }
+//       else if(row == 3 && col == 2){
+//         cout<<"2";
+//       }
+//       else{
+//         cout<<"3";
+//       }
+//     }
+//       cout<<endl;
+//   }
+
+// }
+
+
 #include<iostream>
-#include<math.h>
 using namespace std;
-
-int countValue(int num){
-
-    int count = 0;
-
-    while(num>0){
-
-        num = num/10;
-
-        count++;
-
-    }
-
-    return count;
-
-
-}
 
 int main(){
 
-    int num;
-    cout<<"Enter Number : ";
-    cin>>num;
-
-   int power =  countValue(num);
-
-   cout<<"Power : "<<power<<endl;
-
-    int original = num;
-
-   int sum = 0;
-
-   while(num>0){
-    int digit = num%10;
-
-    sum += pow(digit,power);
-
-    num = num/10;
-   }
-
-    if(original == sum){
-        cout<<"Armstrong Number!"<<endl;
-    }else{
-        cout<<"Sorry, Not Armstrong Number!"<<endl;
+ int num = 1;
+  for(int row = 1; row<=4; row++){
+    for(int col = 1; col <= row; col++){
+      cout<<num++;
     }
+      cout<<endl;
+  }
 
 }
