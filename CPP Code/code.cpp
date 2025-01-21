@@ -3277,19 +3277,111 @@
 
 // }
 
-#include<iostream>
-using namespace std;
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//   int n = 10;
+
+//   int arr[n] ={10,20,30,40,50,60,70,80,90,100};
+
+//   for(int i = 0; i < n; i++){
+//     cout<<"Element present at "<<i<<" index : "<<arr[i]<<endl;
+//   }
+
+// }
 
 
 
-int main(){
-  int n = 10;
+// #include<iostream>
+// using namespace std;
 
-  int arr[n] ={10,20,30,40,50,60,70,80,90,100};
+// int main(){
 
-  for(int i = 0; i < n; i++){
-    cout<<"Element present at "<<i<<" index : "<<arr[i]<<endl;
-  }
+// int n = 6;
+
+// int arr[n];
+
+// for(int i = 0; i < n; i++){
+//   cout<<"Enter element at "<<i<<" index : ";  // user help
+//   cin>>arr[i];  // user se input liya hai
+// }
+
+// // print array
+
+// for(int i = 0; i < n; i++){
+//   cout<<"Element present at "<<i<<" index : ";  // user help
+//   cout<<arr[i]<<endl;
+// }
+// }
 
 
-}
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+// int n = 6;
+
+// int arr[n];
+
+// for(int i = 0; i < n; i++){
+//   cin>>arr[i];  
+// }
+
+// // print array
+
+// for(int i = 0; i < n; i++){
+//   cout<<arr[i]<<" ";
+// }
+// }
+
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+// int arr[] = {10,20,30,40,50,60,70,80,90};
+
+
+// // sizeof()
+
+// int size = sizeof(arr);
+
+// cout<<size<<endl;
+
+// int length = sizeof(arr)/sizeof(arr[0]);
+
+// cout<<"Length : "<<length<<endl;
+
+// // print array
+
+// for(int i = 0; i < length; i++){
+//   cout<<arr[i]<<" ";
+// }
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+// int n = 8;
+
+// int arr[n] = {10,20,30,40,50,60,70,60};
+
+// int key = 60;
+
+// for(int i = 0; i < n; i++){
+//   if(arr[i] == key){
+//     cout<<"Element present in array at "<<i<<" index! "<<endl;
+//   }
+// }
+
+// }
