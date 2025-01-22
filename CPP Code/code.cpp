@@ -3385,3 +3385,202 @@
 // }
 
 // }
+
+
+
+
+// #include<iostream>
+// #include<math.h>
+// using namespace std;
+
+// int countValue(int num){
+
+//     int count = 0;
+
+//     while(num>0){
+
+//         num = num/10;
+
+//         count++;
+
+//     }
+
+//     return count;
+
+
+// }
+
+// int main(){
+
+//     int num;
+//     cout<<"Enter Number : ";
+//     cin>>num;
+
+//    int power =  countValue(num);
+
+//    cout<<"Power : "<<power<<endl;
+
+//     int original = num;
+
+//    int sum = 0;
+
+//    while(num>0){
+//     int digit = num%10;
+
+//     sum += pow(digit,power);
+
+//     // sum += digit*digit*digit;
+
+//     num = num/10;
+//    }
+
+//     if(original == sum){
+//         cout<<"Armstrong Number!"<<endl;
+//     }else{
+//         cout<<"Sorry, Not Armstrong Number!"<<endl;
+//     }
+
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int arr[5] = {10,20,30,40,50};
+
+//     // forEach()
+
+//     for(int element : arr){
+//         cout<<element<<endl;
+//     }
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  int arr[5] = {10,23,30,45,50};
+
+//     // forEach()
+
+//     for(int element : arr){
+//         if(element%2 == 0){
+//             cout<<element<<" ";
+//         }
+//     }
+// }
+
+
+
+// doc : https://www.geeksforgeeks.org/g-fact-40-foreach-in-c-and-java/
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+    
+//     cout<<"Integer : "<<sizeof(int)<<endl;
+//     cout<<"Double : "<<sizeof(double)<<endl;
+//     cout<<"Float : "<<sizeof(float)<<endl;
+//     cout<<"Character : "<<sizeof(char)<<endl;
+//     cout<<"Boolean : "<<sizeof(bool)<<endl;
+//     cout<<"String : "<<sizeof(string)<<endl;
+
+//     int a = 10;
+
+//     cout<<sizeof(a)<<endl;
+
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+    
+//    int arr[5] = {10,2,30,40,50};
+
+//    arr[1] = 20;
+
+//    for(int element : arr){
+//     cout<<element<<" ";
+//    }
+
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+    
+//    int arr[5] = {10,2,30,40,50};
+
+//     for(int i = 0; i < 5; i++){
+//         if(i==1){
+//             arr[i] = 20;
+//             break;
+//         }
+//     }
+
+//    for(int element : arr){
+//     cout<<element<<" ";
+//    }
+
+// }
+
+
+// Delete Array element from speific index
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+    
+//    int arr[5] = {10,2,30,40,50};
+
+// // delete
+
+//     for(int i = 0; i < 5; i++){
+//        arr[i] = arr[i+1];
+//     }
+
+// // array display
+
+//   for(int i = 0; i < 4; i++){
+//     cout<<arr[i]<<" ";
+//   }
+
+// }
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"Enter Size of Array : ";
+    cin>>n;
+   int arr[n];
+
+  for(int i = 0; i < n; i++){
+    cout<<"Enter element at "<<i<<" index : ";
+    cin>>arr[i];
+   }
+
+    int deleteIndex;
+   cout<<"Enter index number of deleting element : ";
+   cin>>deleteIndex;
+// delete
+
+    for(int i = deleteIndex; i < n; i++){
+       arr[i] = arr[i+1];
+    }
+
+// array display
+
+    for(int i = 0; i < n-1; i++){
+        cout<<arr[i]<<" ";
+    }
+
+}
