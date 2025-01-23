@@ -3554,33 +3554,263 @@
 
 // }
 
-#include<iostream>
-using namespace std;
 
-int main(){
-    int n;
-    cout<<"Enter Size of Array : ";
-    cin>>n;
-   int arr[n];
 
-  for(int i = 0; i < n; i++){
-    cout<<"Enter element at "<<i<<" index : ";
-    cin>>arr[i];
-   }
+// #include<iostream>
+// using namespace std;
 
-    int deleteIndex;
-   cout<<"Enter index number of deleting element : ";
-   cin>>deleteIndex;
-// delete
+// int main(){
+//     int n;
+//     cout<<"Enter Size of Array : ";
+//     cin>>n;
+//    int arr[n];
 
-    for(int i = deleteIndex; i < n; i++){
-       arr[i] = arr[i+1];
-    }
+//   for(int i = 0; i < n; i++){
+//     cout<<"Enter element at "<<i<<" index : ";
+//     cin>>arr[i];
+//    }
 
-// array display
+//     int deleteIndex;
+//    cout<<"Enter index number of deleting element : ";
+//    cin>>deleteIndex;
+// // delete
 
-    for(int i = 0; i < n-1; i++){
-        cout<<arr[i]<<" ";
-    }
+//     for(int i = deleteIndex; i < n; i++){
+//        arr[i] = arr[i+1];
+//     }
 
-}
+// // array display
+
+//     for(int i = 0; i < n-1; i++){
+//         cout<<arr[i]<<" ";
+//     }
+
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+    
+//     int arr[5] = {10,3,5,8,2};
+
+//     int minValue = arr[3];
+
+//     for(int i = 0; i <5; i++){
+//         if(arr[i] < minValue){
+//             minValue = arr[i];
+//         }
+//     }
+
+//     cout<<"Min Value : "<<minValue<<endl;
+// }
+
+
+// #include<iostream>
+// #include<limits.h>
+// using namespace std;
+
+// int main(){
+    
+//     int arr[8] = {10,3,5,8,2,85,3,96};
+
+//     int maxValue = INT_MIN;
+
+//     for(int i = 0; i <8; i++){
+//         if(arr[i] > maxValue){
+//             maxValue = arr[i];
+//         }
+//     }
+
+//     cout<<"Max Value : "<<maxValue<<endl;
+// }
+// #include<iostream>
+// #include<limits.h>
+// using namespace std;
+
+// int main(){
+    
+//     int arr[8] = {10,3,5,8,2,85,3,96};
+
+//     int minValue = INT_MAX;
+
+//     for(int i = 0; i <8; i++){
+//         if(arr[i] < minValue){
+//             minValue = arr[i];
+//         }
+//     }
+
+//     cout<<"Min Value : "<<minValue<<endl;
+// }
+
+
+// #include<iostream>
+// #include<limits.h>
+
+// or
+
+// #include<bits/stdc++.h> 
+// using namespace std;
+
+// int main(){
+    
+//     int arr[8] = {10,3,5,8,2,85,3,96};
+
+//     int minValue = INT_MAX;
+
+//     for(int i = 0; i <8; i++){
+//         if(arr[i] < minValue){
+//             minValue = arr[i];
+//         }
+//     }
+
+//     cout<<"Min Value : "<<minValue<<endl;
+// }
+
+
+// Swap()
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 10;
+//     int b = 20;
+    
+//     swap(b,a);
+
+//     cout<<"A : "<<a<<endl;
+//     cout<<"B : "<<b<<endl;
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int arr[10] = {12,34,5,67,8,9,1223,56,78,2};
+
+//  cout<<"Before swap/reverse : ";
+
+//     for(int i = 0; i < 10; i++){
+//         cout<<arr[i] <<" ";
+//     }
+
+// cout<<endl;
+
+//     int i = 0;
+//     int j = 9;
+
+//     while(i<j){
+
+//         swap(arr[i],arr[j]);
+//         i++;
+//         j--;
+//     }
+
+// cout<<"After swap/reverse : ";
+//     for(int i = 0; i < 10; i++){
+//         cout<<arr[i] <<" ";
+//     }
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int arr[10] = {12,34,5,67,8,9,1223,56,78,2};
+
+//  cout<<"Before swap/reverse : ";
+
+//     for(int i = 0; i < 10; i++){
+//         cout<<arr[i] <<" ";
+//     }
+
+//     cout<<endl;
+
+//     int i = 0;
+//     int j = 9;
+
+//     while(i<j){
+
+//         swap(arr[i],arr[j]);
+//         i++;
+//         j--;
+//     }
+
+// cout<<"After swap/reverse : ";
+//     for(int i = 0; i < 10; i++){
+//         cout<<arr[i] <<" ";
+//     }
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//     int arr[10] = {12,34,67,56,89,44,22,12,98,100};
+
+//     int j = 9;
+
+//     for(int i = 0; i < 10; i++){
+
+//         if(i>=j){
+//             break;
+//         }
+
+//         swap(arr[i],arr[j]);
+//         j--;
+//     }
+
+
+//     cout<<"After swap/reverse : ";
+//     for(int i = 0; i < 10; i++){
+//         cout<<arr[i] <<" ";
+//     }
+
+    
+
+// }
+
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//     int arr[10] = {12,34,67,56,89,44,22,12,98,100};
+
+//     int j = 9;
+
+//     for(int i = 0; i < j; i++){
+
+//         // if(i>=j){
+//         //     break;
+//         // }
+
+//         swap(arr[i],arr[j]);
+//         j--;
+//     }
+
+
+//     cout<<"After swap/reverse : ";
+//     for(int i = 0; i < 10; i++){
+//         cout<<arr[i] <<" ";
+//     }
+
+    
+
+// }
+
+
+
+// Array -> insert -> element -> without delete element present at that place
+
