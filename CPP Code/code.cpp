@@ -3898,34 +3898,210 @@
 //     }
 // }
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    int row_size = 3;
-    int col_size = 4;
+// int main(){
+//     int row_size = 3;
+//     int col_size = 4;
 
-    int arr[row_size][col_size];
+//     int arr[row_size][col_size];
 
 
 
-    for(int i = 0; i < row_size; i++){
+//     for(int i = 0; i < row_size; i++){
 
-        for(int j = 0; j < col_size; j++){
-            cout<<"Row "<<i<<" index & Col "<<j<<" index :";
-           cin>>arr[i][j];
-        }
-        cout<<endl;
-    }
+//         for(int j = 0; j < col_size; j++){
+//             cout<<"Row "<<i<<" index & Col "<<j<<" index :";
+//            cin>>arr[i][j];
+//         }
+//         cout<<endl;
+//     }
 
-    // output
+//     // output
 
-    for(int i = 0; i < row_size; i++){
+//     for(int i = 0; i < row_size; i++){
 
-        for(int j = 0; j < col_size; j++){
+//         for(int j = 0; j < col_size; j++){
 
-            cout<<arr[i][j]<<" ";
-        }
-        cout<<endl;
-    }
-}
+//             cout<<arr[i][j]<<" ";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+
+// Function
+
+
+// #include<iostream>
+// using namespace std;
+
+// // Function definition
+// int addition(){
+
+//     cout<<"Function Called.."<<endl;
+// }
+
+// int main(){
+//     addition();  // function call
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// // function declaration
+
+// int addition();
+
+// int main(){
+//     addition();  // function call
+// }
+
+// // Function definition
+// int addition(){
+
+//     cout<<"Function Called.."<<endl;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// // Function definition
+
+// int addition(int num1, int num2){
+
+//     cout<<"Function Called.."<<endl;
+
+//     int sum = num1+num2;
+
+//     cout<<"Sum : "<<sum<<endl;
+// }
+
+// int main(){
+//     addition(10,20);  // function call
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// // Function definition
+
+// int addition(int num1, int num2){
+
+//     cout<<"Function Called.."<<endl;
+
+//     int sum = num1+num2;
+
+//     return sum;
+// }
+
+// int main(){
+//    int result =  addition(10,20);  // function call
+
+//    cout<<"Result : "<<result<<endl;
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// // Function definition
+
+// void addition(int num1, int num2){
+
+//     cout<<"Function Called.."<<endl;
+
+//     int sum = num1+num2;
+//     cout<<"Sum : "<<sum<<endl;
+
+// }
+
+// int main(){
+//    addition(10,20);  // function call
+
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// // Function definition
+
+// int printName(string name){
+
+//  cout<<"Name : "<<name<<endl;
+
+// }
+
+// int main(){
+//    printName("Fatima"); 
+
+// }
+
+
+// ASCII ref : https://www.w3schools.com/charsets/ref_html_ascii.asp
+
+// 0 -> 48
+// 9 -> 57
+
+
+// A -> 65
+// Z -> 90
+
+// a = 97
+// z = 122
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//    const char *str = "Pawan";
+
+//     cout<<str<<endl;
+
+//     int A = 'A';
+
+//     int Z = 'Z';
+
+//     cout<<"ASCCI of A : "<<A<<endl;
+//     cout<<"ASCCI of Z : "<<Z<<endl;
+
+//     char ch = 65;
+
+//     cout<<ch<<endl;
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// // Function definition
+
+// string printName(){
+    
+//     string name = "Fatima Maam";
+//     return name;
+
+// }
+
+// int main(){
+//  string str =  printName(); 
+
+//  cout<<"Name : "<<str<<endl;
+
+// }
+
+
+
+
+
+
