@@ -4335,30 +4335,34 @@
 
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
+// int main(){
 
-    int arr[5] = {10,20,30,40,50};
+//     int arr[5] = {10,20,30,40,50};
 
-    // int *ptr = arr;  ->array ka base address -> &arr[0]
+//     // int *ptr = arr;  ->array ka base address -> &arr[0]
 
-    // cout<<arr<<endl;
+//     // cout<<arr<<endl;
 
-    // cout<<&arr[0]<<endl;
-
-
-    // int *ptr = arr;
-
-    // cout<<*ptr<<endl;  
+//     // cout<<&arr[0]<<endl;
 
 
-    int *ptr = arr;
+//     // int *ptr = arr;
 
-    for(int i = 0; i < 5; i++){
-        cout<<"Address of "<<i<<" index : "<<(ptr+i)<<" and its value : ";
-        cout<<*(ptr + i)<<endl;
-    }
+//     // cout<<*ptr<<endl;  
 
-}
+
+//     int *ptr = arr;
+
+//     for(int i = 0; i < 5; i++){
+//         cout<<"Address of "<<i<<" index : "<<(ptr+i)<<" and its value : ";
+//         cout<<*(ptr + i)<<endl;
+//     }
+
+// }
+
+
+
+
