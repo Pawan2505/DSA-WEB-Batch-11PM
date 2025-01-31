@@ -4365,4 +4365,74 @@
 
 
 
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int x = 10;
+
+//     int *ptr = &x;
+
+//     cout<<x<<endl;  //10
+//     cout<<*ptr<<endl; // 10
+
+//     *ptr = 80;
+
+//     cout<<x<<endl;  //80
+//     cout<<*ptr<<endl; // 80
+
+// }
+
+
+
+//  refrence variable -> address -> & -> refrence varable store the address of another variable
+
+
+// Call by value
+
+// #include<iostream>
+// using namespace std;
+
+// int print(int &x){
+
+//     cout<<"Value of x : "<<x<<endl;
+//     cout<<"Address Value of x : "<<&x<<endl;
+
+//     x = 100;
+
+// }
+
+// int main(){
+    
+//     int a = 10;
+
+//     print(a);
+
+//     cout<<"Value of a : "<<a<<endl;
+//     cout<<"Value of a : "<<&a<<endl;
+// }
+
+
+
+
+// call by value
+
+// #include <iostream>
+// using namespace std;
+
+// // function to update the original value
+// void increment(int num)
+// {
+//     cout<<"post inc : "<<num++<<endl;  //5
+//     cout << num << endl;  //6
+// }
+
+// int main()
+// {
+//     int number = 5;
+//     increment(number); // Passing 'number' by value
+//     cout << number << endl;
+//     return 0;
+// }
+
 
