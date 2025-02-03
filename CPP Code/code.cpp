@@ -4435,4 +4435,120 @@
 //     return 0;
 // }
 
+// passing array in function
+
+// #include<iostream>
+// using namespace std;
+
+// int printArray(int arr[], int size){
+
+//     for(int i = 0; i < size; i++){
+//         cout<<arr[i]<<" ";
+//     }
+
+// }
+
+// int main(){
+//     int n = 6;
+//     int arr[n] = {11,222,45,67,89,54};
+
+//     printArray(arr, n);
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int printArray(int *arr, int size){
+
+//     for(int i = 0; i < size; i++){
+//         cout<<arr[i]<<" ";
+//     }
+
+// }
+
+// int main(){
+//     int n = 6;
+//     int arr[n] = {11,222,45,67,89,54};
+
+//     printArray(arr, n);
+// }
+
+
+
+// oops 
+
+
+// #include<iostream>
+// using namespace std;
+
+// // create class
+// class Person{
+
+// };
+
+// int main(){
+//     Person fatima;  // create object
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// // create class
+// class Person{
+//     // Access specifier
+//     public :
+//     string name;
+//     int age;
+
+
+//     // method
+
+//     void display(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//     }
+// };
+
+// int main(){
+//     Person f;  // create object
+
+// // insilization -> outide of class
+//     f.name = "Fatima Ji";
+//     f.age = 11;
+
+//     f.display();
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// // create class
+// class Person{
+//     // Access specifier
+//     // private :
+//     protected :
+//     string name;
+//     int age;
+
+
+//     // method
+
+//     void display(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//     }
+// };
+
+// int main(){
+//     Person f;  // create object
+
+// // insilization -> outide of class
+//     f.name = "Fatima Ji";
+//     f.age = 11;
+
+//     f.display();
+// }
 
