@@ -3192,6 +3192,7 @@
 // Megabyte (MB): One thousand kilobytes is one megabyte.
 // Gigabyte (GB): One thousand megabytes is one gigabyte.
 
+//Array
 
 // #include<iostream>
 // using namespace std;
@@ -3814,7 +3815,7 @@
 
 // Array -> insert -> element -> without delete element present at that place
 
-
+// 2D Array
 
 // #include<iostream>
 // using namespace std;
@@ -4288,6 +4289,8 @@
 // }
 
 
+// Pointer
+
 // #include<iostream>
 // using namespace std;
 
@@ -4658,38 +4661,40 @@
 
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-// create class
-class Person{
-    private :
-    string name;
-    int age;
+// // create class
+// class Person{
+//     private :
+//     string name;
+//     int age;
 
-    public : 
-    // constructor
+//     public : 
+//     // constructor
 
-    Person(string firstname, int currentage){
-         name = firstname;
-         age = currentage;
-    }
+//     Person(string firstname, int currentage){
+//          name = firstname;
+//          age = currentage;
+//     }
 
-// getter method
-    void getDetails(){
-        cout<<"Name : "<<name<<endl;
-        cout<<"Age : "<<age<<endl;
-    }
+// // getter method
+//     void getDetails(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//     }
 
     
 
-};
+// };
 
-int main(){
-  Person p("Praksh",15);
+// int main(){
+//   Person p("Praksh",15);
 
-  p.getDetails();
-}
+//   p.getDetails();
+// }
+
+
 
 
 

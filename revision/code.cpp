@@ -155,33 +155,115 @@
 // cout<<::a<<endl;
 
 // }
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int a = 100;
+// int a = 100;
 
-namespace na{
-    int a = 400;
-}
-namespace nb{
-    int a = 500;
-}
+// namespace na{
+//     int a = 400;
+// }
+// namespace nb{
+//     int a = 500;
+// }
 
-int main(){
+// int main(){
 
-int a = 10;  // global variable
+// int a = 10;  // global variable
 
-{
-    int a = 20;  // local variable
-    cout<<a<<endl; //20
-}
+// {
+//     int a = 20;  // local variable
+//     cout<<a<<endl; //20
+// }
 
 
-cout<<a<<endl; //10
+// cout<<a<<endl; //10
 
-cout<<::a<<endl;
+// cout<<::a<<endl;
 
-cout<<na::a<<endl;
-cout<<nb::a<<endl;
+// cout<<na::a<<endl;
+// cout<<nb::a<<endl;
 
-}
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 10;
+//     int b = 2;
+
+//     int result = a&b;
+
+//     cout<<"Result : "<<result<<endl;
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 10;
+//     int b = 5;
+
+//     int result = a|b;
+
+//     cout<<"Result : "<<result<<endl;
+// }
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 10;
+//     int b = 5;
+
+//     int result = a^b;
+
+//     cout<<"Result : "<<result<<endl;
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 10;
+   
+//     int result = a<<2;
+
+//     cout<<"Result : "<<result<<endl;
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 10;
+   
+//     int result = a>>2;
+
+//     cout<<"Result : "<<result<<endl;
+// }
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int a = -100;
+   
+//     int result = ~a;
+
+//     cout<<"Result : "<<result<<endl;
+// }
+
+// Typecasting
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int a = 15;
+   
+//     float result = (float)a/2;
+
+//     cout<<"Result : "<<result<<endl;
+// }
