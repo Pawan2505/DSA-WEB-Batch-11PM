@@ -4529,7 +4529,8 @@
 // class Person{
 //     // Access specifier
 //     // private :
-//     protected :
+//     // protected :
+//     // public : 
 //     string name;
 //     int age;
 
@@ -4551,4 +4552,144 @@
 
 //     f.display();
 // }
+
+
+// #include<iostream>
+// using namespace std;
+
+// // create class
+// class Person{
+//     // Access specifier
+//     // private :
+//     // protected :
+//     public : 
+//     string name;
+//     int age;
+
+
+// };
+
+// int main(){
+//     Person f;  // create object
+
+// // insilization -> outide of class
+//     f.name = "Fatima Ji";
+//     f.age = 11;
+
+// // outside -> access
+//    cout<<"Name : "<<f.name<<endl;
+//    cout<<"Age : "<<f.age<<endl;
+// }
+
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// // create class
+// class Person{
+//     // Access specifier
+//     // private :
+//     public :
+//     string name;
+//     int age;
+
+
+// };
+
+// int main(){
+//     Person f;  // create object -> allocate memory to data member
+
+
+// // outside -> access
+//    cout<<"Name : "<<f.name<<endl;
+//    cout<<"Age : "<<f.age<<endl;
+// }
+
+
+// getter and setter method
+
+// #include<iostream>
+// using namespace std;
+
+// // create class
+// class Person{
+//     private :
+//     string name;
+//     int age;
+
+//     public :
+
+// //setter method
+//     void setData(string name, int age){
+//         this->name = name;
+//         this->age = age;
+//     }
+//     void setData(){
+//        cout<<"Aur setter bhai chal jawoge"<<endl;
+//     }
+
+// // getter method
+//     void getDetails(){
+//         cout<<"Name : "<<this->name<<endl;
+//         cout<<"Age : "<<this->age<<endl;
+//     }
+
+    
+
+// };
+
+// int main(){
+//     Person f,j;  // create object -> allocate memory to data member
+
+//     f.setData("Fatima",18);
+
+//     f.setData();
+
+//     f.getDetails();
+
+//     j.setData("Janam",11);
+
+//     j.getDetails();
+// }
+
+
+
+
+
+#include<iostream>
+using namespace std;
+
+// create class
+class Person{
+    private :
+    string name;
+    int age;
+
+    public : 
+    // constructor
+
+    Person(string firstname, int currentage){
+         name = firstname;
+         age = currentage;
+    }
+
+// getter method
+    void getDetails(){
+        cout<<"Name : "<<name<<endl;
+        cout<<"Age : "<<age<<endl;
+    }
+
+    
+
+};
+
+int main(){
+  Person p("Praksh",15);
+
+  p.getDetails();
+}
+
+
 
