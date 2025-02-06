@@ -267,3 +267,50 @@
 
 //     cout<<"Result : "<<result<<endl;
 // }
+
+
+// #include<iostream>
+
+// using namespace std;
+
+// int main(){
+//     int num =1;
+
+//     while(num<=10){
+//         cout<<num<<" ";
+//         num++;
+//     }
+// }
+
+// #include<iostream>
+
+// using namespace std;
+
+// int main(){
+//     int num =10;
+
+//     while(num>=1){
+//         cout<<num<<" ";
+//         num--;
+//     }
+// }
+
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+    int num =1010;
+    int sum = 0;
+
+    while(num>0){
+       int digit = num%10;
+       sum += digit;
+       num = num/10;
+    }
+
+    cout<<"Sum of digit : "<<sum<<endl;
+}
+
+
