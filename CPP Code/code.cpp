@@ -4697,4 +4697,183 @@
 
 
 
+// Array of object -> 1. setter method
+
+
+// #include<iostream>
+// using namespace std;
+
+// // create class
+// class Person{
+//     private :
+//     string name;
+//     int age;
+
+//     public :
+// // setter method
+//    void setDetails(string firstname, int currentage){
+//          name = firstname;
+//          age = currentage;
+//     }
+
+// // getter method
+//     void getDetails(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//     }
+
+    
+
+// };
+
+// int main(){
+//   Person p[2];
+    
+//     p[0].setDetails("Pawan", 24);
+//     p[1].setDetails("Manish", 25);
+
+//     p[0].getDetails();
+//     p[1].getDetails();
+
+// }
+
+// Method : 2 -> constructor
+
+// #include<iostream>
+// using namespace std;
+
+// // create class
+// class Person{
+//     protected :
+//     string name;
+//     int age;
+
+//     public :
+// // constructor
+
+//  Person(string firstname, int currentage){
+//          name = firstname;
+//          age = currentage;
+//     }
+
+// // getter method
+//     void getDetails(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//     }
+
+// };
+
+// int main(){
+//   Person p[2]  = {
+//     Person("Pawan",24),
+//     Person("Manish",25)
+//   };
+
+// cout<<"Object first details : "<<endl;
+//   p[0].getDetails();
+
+// cout<<"Object second details : "<<endl;
+//   p[1].getDetails();
+       
+
+// }
+
+// Array Pointer Object : setter method
+
+// #include<iostream>
+// using namespace std;
+
+// // create class
+// class Person{
+//     protected :
+//     string name;
+//     int age;
+
+//     public :
+// // setter method
+//    void setDetails(string firstname, int currentage){
+//          name = firstname;
+//          age = currentage;
+//     }
+
+// // getter method
+//     void getDetails(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//     }
+
+// };
+
+// int main(){
+//   Person *p[2];
+
+//     p[0] = new Person();  // allocate memory
+//     p[1] = new Person(); // allocate memory
+
+
+//     p[0]->setDetails("Pawan", 24);
+//     p[1]->setDetails("Manish", 25);
+
+//     p[0]->getDetails();
+//     p[1]->getDetails();
+
+//     delete *p;  // deallocate memory
+
+// }
+
+
+// Array Pointer Object : constructor
+
+// #include<iostream>
+// using namespace std;
+
+// // create class
+// class Person{
+//     protected :
+//     string name;
+//     int age;
+
+//     public :
+// // constructor
+
+//  Person(string firstname, int currentage){
+//          name = firstname;
+//          age = currentage;
+//     }
+
+// // getter method
+//     void getDetails(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//     }
+
+// };
+
+// int main(){
+//   Person *p[2];
+
+//     p[0] = new Person("Pawan", 24);  // allocate memory
+//     p[1] = new Person("Manish", 25); // allocate memory
+
+
+//     p[0]->getDetails();
+//     p[1]->getDetails();
+
+//     delete *p;  // deallocate memory
+
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int a = 99;
+
+// int main(){
+//     int a = 10;
+//     cout<<"Local Value : "<<a<<endl;
+//     cout<<"Globle Value : "<<::a<<endl;
+// }
+
 
