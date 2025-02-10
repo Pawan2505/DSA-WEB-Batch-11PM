@@ -4877,3 +4877,73 @@
 // }
 
 
+
+// Static Data member : 
+
+// #include<iostream>
+// using namespace std;
+
+// class Teacher{
+
+//     public :
+
+//       string name; // instance variable
+//       int age; // instance variable
+//       static double salary;  // class level variable
+
+//     Teacher(){
+//         this->name = "Raj";
+//         this->age = 11;
+
+//     }
+
+//     Teacher(string name, int age){ 
+//         this->name = name;
+//         this->age = age;
+//     }
+
+//     void getDetails(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//         cout<<"Salary : "<<salary<<endl;
+//     }
+
+// };
+
+// double Teacher::salary = 99;
+
+// int main(){
+
+//     Teacher t1;  // create object => allocate memory to non static data member => automic parameterless cunstructor called..
+    
+//     Teacher t2("Vraj",5);  // call -> parameter constructor
+//     t1.getDetails();
+
+//     t2.getDetails(); 
+// }
+
+
+// Static member function
+
+
+#include<iostream>
+using namespace std;
+
+class Teacher{
+
+    public :
+      static double salary;  // class level variable
+
+
+  static void getDetails(){
+        cout<<"Salary : "<<salary<<endl;
+    }
+
+};
+
+double Teacher::salary = 99;  // static data member initialiston
+
+int main(){
+
+    Teacher::getDetails();
+}
