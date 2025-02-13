@@ -5004,43 +5004,713 @@
   
 // }
 
-#include<iostream>
-using namespace std;
 
-class Teacher{
 
-    public :
-    int *ptr;
 
-    Teacher(){
-        cout<<"Constructor Called..."<<endl;
-    }
-    Teacher(int x){
-       ptr = new int;
+// #include<iostream>
+// using namespace std;
 
-       ptr = &x;
-    }
+// class Teacher{
+
+//     public :
+//     int *ptr;
+
+//     Teacher(){
+//         cout<<"Constructor Called..."<<endl;
+//     }
+//     Teacher(int x){
+//        ptr = new int;
+
+//        ptr = &x;
+//     }
     
 
-    ~Teacher(){
-    delete ptr;
-    }
+//     ~Teacher(){
+//     delete ptr;
+//     }
 
 
-    void getDetails(){
-        cout<<"Value : "<<*ptr<<endl;
-    }
+//     void getDetails(){
+//         cout<<"Value : "<<*ptr<<endl;
+//     }
 
 
-};
+// };
 
 
 
-int main(){
+// int main(){
 
-    Teacher t1;  // automatic parameterless (default) constructor call
-    Teacher t2(10);
+//     Teacher t1;  // automatic parameterless (default) constructor call
+//     Teacher t2(10);
 
-    t2.getDetails();
+//     t2.getDetails();
   
-}
+// }
+
+
+
+// Inheritance 
+
+
+// single inheritance 
+
+// #include<iostream>
+// using namespace std;
+
+
+// // 
+// class Vehical{
+
+//     public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels"<<endl;
+//     }
+
+// };
+
+// class Car : public Vehical{
+
+// };
+
+// int main(){
+
+//     // Vehical v1;
+
+//     // v1.display();
+
+// Car c1;
+
+// c1.display();
+
+// }
+
+// #include<iostream>
+// using namespace std;
+
+
+// // Base class
+// class Vehical{
+
+//     private :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : public Vehical{
+//     public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+// };
+
+// int main(){
+
+//     // Vehical v1;
+
+//     // v1.display();
+
+// Car c1;
+
+// c1.display();
+
+// }
+
+
+
+
+// #include<iostream>
+// using namespace std;
+
+
+// // Base class
+// class Vehical{
+
+//     protected :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : public Vehical{
+//     public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+// };
+
+// int main(){
+
+//     // Vehical v1;
+
+//     // v1.display();
+
+// Car c1;
+
+// c1.display();
+
+// }
+
+
+// Way of Inheritance 
+
+// public to public 
+
+// #include<iostream>
+// using namespace std;
+
+// // Base class
+// class Vehical{
+
+//     public :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : public Vehical{
+
+//    public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+// };
+
+// int main(){
+
+
+// Car c1;
+
+// c1.display();
+
+// }
+
+
+// // public to protected 
+
+// #include<iostream>
+// using namespace std;
+
+// // Base class
+// class Vehical{
+
+//     public :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : protected Vehical{
+
+//    public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+// };
+
+// int main(){
+
+
+// Car c1;
+
+// c1.display();
+
+// }
+
+
+// public to private 
+
+// #include<iostream>
+// using namespace std;
+
+// // Base class
+// class Vehical{
+
+//     public :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : private Vehical{
+
+  
+// };
+
+// class BMW : public Car{
+//     public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+// };
+
+
+// int main(){
+
+
+// // Car c1;
+
+// // c1.display();
+
+
+// BMW b1;
+
+// b1.display();
+
+// }
+
+
+// // protected to public
+
+// #include<iostream>
+// using namespace std;
+
+// // Base class
+// class Vehical{
+
+//     protected :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : public Vehical{
+
+
+// };
+
+// class BMW : public Car{
+//     public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+// };
+
+// int main(){
+
+
+// // Car c1;
+
+// // c1.display();
+
+// BMW b1;
+
+// b1.display();
+
+// }
+
+
+// // protected to protected
+
+// #include<iostream>
+// using namespace std;
+
+// // Base class
+// class Vehical{
+
+//     protected :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : protected Vehical{
+
+
+// };
+
+// class BMW : public Car{
+//     public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+// };
+
+// int main(){
+
+
+// // Car c1;
+
+// // c1.display();
+
+// BMW b1;
+
+// b1.display();
+
+// }
+
+// protected to private
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// // Base class
+// class Vehical{
+
+//     protected :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : private Vehical{
+
+
+// };
+
+// class BMW : public Car{
+//     public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+// };
+
+// int main(){
+
+
+// // Car c1;
+
+// // c1.display();
+
+// BMW b1;
+
+// b1.display();
+
+// }
+
+
+// // private to public
+
+// #include<iostream>
+// using namespace std;
+
+// // Base class
+// class Vehical{
+
+//     private :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : public Vehical{
+//     public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+
+// };
+
+
+
+// int main(){
+
+
+// Car c1;
+
+// c1.display();
+
+
+// }
+
+
+// // private to protected
+
+// #include<iostream>
+// using namespace std;
+
+// // Base class
+// class Vehical{
+
+//     private :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : protected Vehical{
+//     public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+
+// };
+
+
+
+// int main(){
+
+
+// Car c1;
+
+// c1.display();
+
+
+// }
+
+
+
+
+// private to private
+
+// #include<iostream>
+// using namespace std;
+
+// // Base class
+// class Vehical{
+
+//     private :
+
+//     int number;
+
+    
+
+// };
+
+
+// // Derived Class
+// class Car : private Vehical{
+//     public :
+
+//     void display(){
+//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+//     }
+
+// };
+
+
+
+// int main(){
+
+
+// Car c1;
+
+// c1.display();
+
+
+// }
+
+
+
+
+
+//  Single Inheritance
+
+// #include <iostream>
+// using namespace std;
+// // Base class
+// class Animal {
+// public:
+//     void eat() {
+//         cout << "Eating..." << endl;
+//     }
+// };
+// // Derived class
+// class Dog : public Animal {
+// public:
+//     void bark() {
+//         cout << "Barking..." << endl;
+//     }
+// };
+// int main() {
+//     Dog d;
+//     d.eat();  // Inherited from Animal
+//     d.bark();
+//     return 0;
+// }
+
+
+
+// Multiple Inheritance
+
+
+// #include <iostream>
+// using namespace std;
+// // Base class 1
+// class Person {
+// public:
+//     void speak() {
+//         cout << "Speaking..." << endl;
+//     }
+// };
+// // Base class 2
+// class Employee {
+// public:
+//     void work() {
+//         cout << "Working..." << endl;
+//     }
+// };
+// // Derived class
+// class Manager : public Person, public Employee {
+// public:
+//     void manage() {
+//         cout << "Managing..." << endl;
+//     }
+// };
+// int main() {
+//     Manager m;
+//     m.speak();
+//     m.work();
+//     m.manage();
+//     return 0;
+// }
+
+
+
+// Multilevel Inheritance
+
+// #include <iostream>
+// using namespace std;
+// // Base class
+// class Vehicle {
+// public:
+//     void drive() {
+//         cout << "Driving..." << endl;
+//     }
+// };
+// // Derived class
+// class Car : public Vehicle {
+// public:
+//     void honk() {
+//         cout << "Honking..." << endl;
+//     }
+// };
+// // Further derived class
+// class SportsCar : public Car {
+// public:
+//     void turbo() {
+//         cout << "Activating Turbo..." << endl;
+//     }
+// };
+// int main() {
+//     SportsCar sc;
+//     sc.drive();
+//     sc.honk();
+//     sc.turbo();
+//     return 0;
+// }
+
+
+//  Hierarchical Inheritance
+
+// #include <iostream>
+// using namespace std;
+// // Base class
+// class Shape {
+// public:
+//     void draw() {
+//         cout << "Drawing Shape..." << endl;
+//     }
+// };
+// // Derived class 1
+// class Circle : public Shape {
+// public:
+//     void area() {
+//         cout << "Calculating Circle Area..." << endl;
+//     }
+// };
+// // Derived class 2
+// class Square : public Shape {
+// public:
+//     void area() {
+//         cout << "Calculating Square Area..." << endl;
+//     }
+// };
+// int main() {
+//     Circle c;
+//     Square s;
+//     c.draw();
+//     c.area();
+//     s.draw();
+//     s.area();
+//     return 0;
+// }
+
+
+//  Hybrid Inheritance
+
+
+// #include <iostream>
+// using namespace std;
+// // Base class
+// class Engine {
+// public:
+//     void start() {
+//         cout << "Engine started." << endl;
+//     }
+// };
+// // Intermediate base class 1
+// class Car : virtual public Engine {};
+// // Intermediate base class 2
+// class Boat : virtual public Engine {};
+// // Derived class
+// class AmphibiousVehicle : public Car, public Boat {
+// public:
+//     void transform() {
+//         cout << "Switching modes." << endl;
+//     }
+// };
+// int main() {
+//     AmphibiousVehicle av;
+//     av.start();  // Inherited from Engine
+//     av.transform();
+//     return 0;
+// }
+
+
+
+// // https://docs.google.com/document/d/1AKXjMAy5thNfqEioBmuocluC2UqlaPsJGbY7Riyj2to/edit?tab=t.0
