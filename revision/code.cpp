@@ -296,21 +296,81 @@
 // }
 
 
-#include<iostream>
+// #include<iostream>
 
-using namespace std;
+// using namespace std;
 
-int main(){
-    int num =1010;
-    int sum = 0;
+// int main(){
+//     int num =1010;
+//     int sum = 0;
 
-    while(num>0){
-       int digit = num%10;
-       sum += digit;
-       num = num/10;
-    }
+//     while(num>0){
+//        int digit = num%10;
+//        sum += digit;
+//        num = num/10;
+//     }
 
-    cout<<"Sum of digit : "<<sum<<endl;
-}
+//     cout<<"Sum of digit : "<<sum<<endl;
+// }
+
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+    
+//     // row
+
+//     for(int row = 1; row<=5; row++){
+
+//         int temp = row;
+
+//         // cols
+
+//         for(int col = 5; col >= row; col--){
+
+//             cout<<temp++;
+//         }
+//         cout<<endl;
+//     }
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+    
+//     // row
+    
+//     int value = 5;
+//     for(int row = 1; row<=5; row++){
+     
+//         //space
+
+//         for(int space = 1; space<= 5-row; space++){
+//             cout<<" ";
+//         }
+
+//         // number
+
+//        int  temp = value; 
+
+//         for(int num = 1; num <= row; num++){
+
+//                 cout<<temp++;
+                
+
+//         }
+
+//         value--;
+//         cout<<endl;
+//     }
+// }
+
+
+
 
 

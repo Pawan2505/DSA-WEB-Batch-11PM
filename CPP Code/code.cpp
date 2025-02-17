@@ -5714,3 +5714,228 @@
 
 
 // // https://docs.google.com/document/d/1AKXjMAy5thNfqEioBmuocluC2UqlaPsJGbY7Riyj2to/edit?tab=t.0
+
+
+
+
+// Polymorphism
+
+// 1. compile time polymorphism -> static  -> overloading
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Student{
+
+//     public :
+
+//     string name;
+//     int age;
+//     int id;
+
+// // constructor -> overloading
+
+//     Student(){
+//         cout<<"Parameterless Constructor called S1.."<<endl;
+//     }
+
+//     Student(string name){
+//         this->name = name;
+//         cout<<"Parameter Constructor called S2.."<<endl;
+
+//     }
+//     Student(string name, int age){
+//         this->name = name;
+//         this->age = age;
+//         cout<<"Parameter Constructor called S3.."<<endl;
+//     }
+//     Student(string name, int age, int id){
+//         this->name = name;
+//         this->age = age;
+
+//         this->id = id;
+//         cout<<"Parameter Constructor called S4.."<<endl;
+//     }
+
+//     void getDetails(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//         cout<<"id : "<<id<<endl;
+//         cout<<"Name : "<<name<<endl;
+//     }
+
+
+// };
+
+// int main(){
+
+//     Student s1;
+//     Student s2("Raj");
+//     Student s3("Janim",22);
+//     Student s4("Utkarsh", 20, 1);
+
+//     s4.getDetails();
+
+
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Student {
+
+//     public :
+
+//     string name;
+//     int age;
+//     int id;
+
+//     // constructor -> overloading
+//     Student(){
+//         cout<<"Parameterless Constructor called S1.."<<endl;
+//     }
+
+//     Student(string name){
+//         this->name = name;
+//         cout<<"Parameter Constructor called S2.."<<endl;
+//     }
+//     Student(string name, int age){
+//         this->name = name;
+//         this->age = age;
+//         cout<<"Parameter Constructor called S3.."<<endl;
+//     }
+//     Student(string name, int age, int id){
+//         this->name = name;
+//         this->age = age;
+//         this->id = id;
+//         cout<<"Parameter Constructor called S4.."<<endl;
+//     }
+
+//     // method overloading with different parameters
+//     void getDetails(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//         cout<<"id : "<<id<<endl;
+//     }
+
+//     void getDetails(bool onlyName){
+//         if (onlyName) {
+//             cout<<"Name : "<<name<<endl;
+//         }
+//     }
+// };
+
+// int main(){
+
+//     Student s1;
+//     Student s2("Raj");
+//     Student s3("Janim",22);
+//     Student s4("Utkarsh", 20, 1);
+
+//     s4.getDetails();  // Calls full details method
+
+//     cout<<"Next... "<<endl;
+//     s2.getDetails(true);  // Calls only name method
+
+// }
+
+
+
+// Operator overloading 
+
+// #include<iostream>
+// using namespace std;
+
+// class Complex{
+
+//     public :
+
+//     int real;
+//     int img;
+
+//     Complex() {
+//         real = 0;
+//         img = 0;
+//     }
+
+//     Complex(int real, int img){
+//         this->real = real;
+//         this->img = img;
+//     }
+//     Complex operator +(Complex &other){
+//         Complex result;
+//         result.real = real + other.real;
+//         result.img = img +other.img;
+//         return result;
+//     }
+
+//     void getComplex(){
+//         cout<<"Complex number : "<<real<<"+"<<img<<"i"<<endl;
+//     }
+
+
+// };
+
+// int main(){
+
+//     Complex c1(5,4);
+
+//     Complex c2(2,1);
+
+//     Complex c3 = c1+c2;
+
+//     c3.getComplex();
+
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Complex{
+
+//     public :
+
+//     int real;
+//     int img;
+
+//     Complex() {
+//         real = 0;
+//         img = 0;
+//     }
+
+//     Complex(int real, int img){
+//         this->real = real;
+//         this->img = img;
+//     }
+//     Complex operator *(Complex &other){
+//         Complex result;
+//         result.real = real * other.real;
+//         result.img = img *other.img;
+//         return result;
+//     }
+
+//     void getComplex(){
+//         cout<<"Complex number : "<<real<<"+"<<img<<"i"<<endl;
+//     }
+
+
+// };
+
+// int main(){
+
+//     Complex c1(5,4);
+
+//     Complex c2(2,1);
+
+//     Complex c3 = c1*c2;
+
+//     c3.getComplex();
+
+// }
+
+
+
