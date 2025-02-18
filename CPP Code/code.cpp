@@ -5939,3 +5939,40 @@
 
 
 
+// Polymorphism : run-time polymorphism
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Parent{
+//     public :
+
+//    virtual void display(){
+//         cout<<"Parrent Class"<<endl;
+//     }
+// };
+
+// class Child:public Parent{
+//     public:
+//     void display() override {
+//         cout<<"Child Class"<<endl;
+//     }
+// };
+
+// int main(){
+
+//     // Parent p;
+
+//     // p.display();
+
+//     Child ch;
+
+//     ch.display();
+
+//     ch.Parent::display();
+
+// }
+
+//Abstraction Class
+
