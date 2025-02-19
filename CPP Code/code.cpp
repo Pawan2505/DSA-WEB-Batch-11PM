@@ -5974,5 +5974,121 @@
 
 // }
 
+
 //Abstraction Class
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Shekhawat{
+//     public :
+
+//     virtual void speak() = 0;
+
+//     void display(){
+//         cout<<"Base Class.."<<endl;
+//     }
+// };
+
+// class Fatima: public Shekhawat{
+
+//     public :
+
+//     void speak(){
+//         cout<<"She speak continuasly..."<<endl;
+//     }
+// };
+
+
+// int main(){
+//     // Shekhawat sh; // we can not create object of abstract class
+
+//     // Shekhawat::display();
+
+//     Fatima ft;
+
+//     ft.display();
+
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Shekhawat{
+//     public :
+//      static void display(){ 
+//         cout<<"Base Class.."<<endl;
+//     }
+// };
+
+// int main(){
+//     Shekhawat::display(); 
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Shekhawat{
+//     public :
+
+//     virtual void speak() = 0;
+
+//     void display(){
+//         cout<<"Base Class.."<<endl;
+//     }
+// };
+
+// class Fatima: public Shekhawat{
+
+//     public :
+
+//     void speak() override {
+//         cout<<"She speak continuasly..."<<endl;
+//     }
+// };
+
+
+// int main(){
+  
+//     Fatima ft;
+
+//     ft.display();
+//     ft.speak();
+
+// }
+
+
+#include<iostream>
+using namespace std;
+// this class behave like interface
+class Shekhawat{
+    public :
+
+    virtual void speak() = 0;
+
+
+};
+
+class Fatima: public Shekhawat{
+
+    public :
+
+    void speak() override {
+        cout<<"She speak continuasly..."<<endl;
+    }
+};
+
+
+int main(){
+  
+    Fatima ft;
+
+    ft.speak();
+
+}
 
