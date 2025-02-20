@@ -6063,32 +6063,36 @@
 // }
 
 
-#include<iostream>
-using namespace std;
-// this class behave like interface
-class Shekhawat{
-    public :
+// #include<iostream>
+// using namespace std;
+// // this class behave like interface
+// class Shekhawat{
+//     public :
 
-    virtual void speak() = 0;
-
-
-};
-
-class Fatima: public Shekhawat{
-
-    public :
-
-    void speak() override {
-        cout<<"She speak continuasly..."<<endl;
-    }
-};
+//     virtual void speak() = 0;
 
 
-int main(){
+// };
+
+// class Fatima: public Shekhawat{
+
+//     public :
+
+//     void speak() override {
+//         cout<<"She speak continuasly..."<<endl;
+//     }
+// };
+
+
+// int main(){
   
-    Fatima ft;
+//     Fatima ft;
 
-    ft.speak();
+//     ft.speak();
 
-}
+// }
 
+
+
+
+// https://docs.google.com/document/d/1HmbSaixc9NlRKNxcrconNpOXCnvLIeSnU7i1elVflow/edit?tab=t.0
