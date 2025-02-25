@@ -58,34 +58,35 @@
 
 // Template : inside class
 
-#include <iostream>
-using namespace std;
 
-template<typename T1,typename T2>
-class Student
-{
-public:
-    T1 name;
-    T2 age;
+// #include <iostream>
+// using namespace std;
 
-
-    Student(T1 name, T2 age)
-    {
-        this->name = name;
-        this->age = age;
-    }
+// template<typename T1,typename T2>
+// class Student
+// {
+// public:
+//     T1 name;
+//     T2 age;
 
 
-    T1 display()
-    {
-        cout << "Name : " << name << endl;
-        cout << "Age : " << age << endl;
-    }
-};
+//     Student(T1 name, T2 age)
+//     {
+//         this->name = name;
+//         this->age = age;
+//     }
 
-int main()
-{
-    Student<string,int> s1("Pawan",25);
 
-    s1.display();
-}
+//     T1 display()
+//     {
+//         cout << "Name : " << name << endl;
+//         cout << "Age : " << age << endl;
+//     }
+// };
+
+// int main()
+// {
+//     Student<string,int> s1("Pawan",25);
+
+//     s1.display();
+// }
