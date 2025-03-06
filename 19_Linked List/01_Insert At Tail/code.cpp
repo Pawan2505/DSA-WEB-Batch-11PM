@@ -29,7 +29,15 @@ void insertAtTail(Node* &head, int data){
     temp->next = newNode;
 }
 
-void display(Node *&head)
+void insertAtHead(Node *&head, int data){
+    Node *newNode = new Node(data); 
+
+    newNode->next = head;
+
+    head = newNode;
+}
+
+    void display(Node *&head)
 {
     if(head == NULL){
         cout << "LinkedList is Empty!" << endl;
@@ -61,5 +69,10 @@ int main(){
     insertAtTail(head, 50);
     insertAtTail(head, 60);
 
+    display(head);
+
+    insertAtHead(head, 1000);
+    insertAtHead(head, 2000);
+    insertAtHead(head, 3000);
     display(head);
 }
