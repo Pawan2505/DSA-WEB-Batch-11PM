@@ -5,6 +5,7 @@
 In C++, a stack is a container adaptor, which is part of the Standard Template Library (STL). It follows the **LIFO (Last In First Out)** principle, meaning the last element pushed onto the stack will be the first one to be popped off. This makes it similar to a stack of plates, where you add and remove plates from the top of the stack.
 
 ### Key Characteristics of Stack:
+
 1. **LIFO (Last In First Out):** The last element inserted is the first one removed.
 2. **Push and Pop Operations:** You can add (push) elements and remove (pop) elements from the stack.
 3. **Top Access:** You can only access the top element of the stack.
@@ -66,6 +67,7 @@ int main()
 ```
 
 ### Output:
+
 ```
 Top Element in stack : 80
 Size of stack : 8
@@ -74,6 +76,7 @@ Elements in stack: 80 70 60 50 40 30 20 10
 ```
 
 In the above example:
+
 - We push multiple elements into the stack.
 - We access the top element using `st.top()`.
 - We check the size of the stack using `st.size()`.
@@ -137,15 +140,17 @@ int main()
 ```
 
 ### Output:
+
 ```
 Top Element in stack 1 : 80
 Size of stack 1 : 8
 stack 1 is empty : No
-First stack after swap: 3000 2000 1000 
+First stack after swap: 3000 2000 1000
 Second stack after swap: 80 70 60 50 40 30 20 10
 ```
 
 In the above example:
+
 - We have two stacks `st1` and `st2`.
 - After pushing elements to both stacks, we display the top element, size, and whether the stack is empty.
 - We use the `swap()` function to swap the contents of `st1` and `st2`.
@@ -163,11 +168,10 @@ In the above example:
 
 ---
 
-### Norte:
+### Note:
+
 - A stack in C++ follows the **LIFO** principle.
 - The **push()**, **pop()**, **top()**, **size()**, **empty()**, and **swap()** methods are used for manipulating stacks.
 - **push()** adds elements, **pop()** removes elements, **top()** returns the top element, **size()** gives the number of elements, **empty()** checks if the stack is empty, and **swap()** swaps two stacks.
 
 ---
-
-
