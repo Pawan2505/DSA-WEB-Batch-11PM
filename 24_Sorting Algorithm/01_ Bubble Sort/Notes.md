@@ -242,7 +242,7 @@ To better understand the sorting process, let's walk through each **pass** of Bu
 
 ---
 
-#### **8. Note:*
+#### 8. Note:
 
 - **Bubble Sort** is a simple comparison-based sorting algorithm.
 - It works by repeatedly comparing adjacent elements and swapping them if needed.
