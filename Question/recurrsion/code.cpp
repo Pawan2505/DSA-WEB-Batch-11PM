@@ -38,8 +38,8 @@ using namespace std;
 int prime(int num, int i,int count)
 {
 
-    // base condition
-    
+ // base condition
+
     if (i > num)
     {
         return count;
